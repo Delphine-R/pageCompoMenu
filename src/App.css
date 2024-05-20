@@ -1,8 +1,87 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+/* Container for the App component */
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align items to the left */
+  gap: 20px;
+  max-width: 800px; /* Set a max-width for better readability */
+}
+
+/* Styling for the image component */
+.ImagePlat img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the explanatory text */
+.TexteExplicatif {
+  max-width: 600px;
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+/* Styling for the banner */
+.BanniereAccompagnement {
+  background-color: #fffae6;
+  padding: 10px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.BanniereAccompagnement:hover {
+  background-color: #fff3cc;
+}
+
+/* Styling for the rectangular section */
+.rectangular-section {
+  background-color: #e0e0e0;
+  padding: 20px;
+  border-radius: 8px;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Section for additional content when accompaniment is shown */
+.accompagnementContent {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+}
+
+/* Styling for the validation button */
+.ValiderButton button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.ValiderButton button:hover {
+  background-color: #0056b3;
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-  text-align: center;
+  text-align: left;
 }
 
 .logo {

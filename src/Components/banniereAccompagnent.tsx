@@ -1,16 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
+import SectionAccompagnement from './sectionAccompagnement';
 
-interface BanniereAccompagnementProps {
-    toggleAccompagnement: () => void;
-    showAccompagnement: boolean;
-}
+interface BanniereAccompagnementProps {}
 
-const BanniereAccompagnement: React.FC<BanniereAccompagnementProps> = ({ toggleAccompagnement, showAccompagnement }) => {
+const BanniereAccompagnement: React.FC<BanniereAccompagnementProps> = () => {
+    const [showAccompagnement, setShowAccompagnement] = useState(false);
+    const toggleAccompagnement = () => {
+        setShowAccompagnement(!showAccompagnement);
+    };
+
     return (
-        <div>
-            <button onClick={toggleAccompagnement}>
-                {showAccompagnement ? 'Fermer' : 'Ouvrir'} Accompagnement 1
-            </button>
+        <div className="rectangular-section">
+            <div>
+                <button onClick={toggleAccompagnement}>
+                    {showAccompagnement ? 'Fermer' : 'Ouvrir'} Accompagnement 1
+                </button>
+            </div>
+            {showAccompagnement && <SectionAccompagnement />}
         </div>
     );
 };
