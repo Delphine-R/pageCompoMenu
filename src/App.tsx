@@ -4,7 +4,7 @@ import TexteExplicatif from './Components/texteExplicatif';
 import BanniereAccompagnement from './Components/banniereAccompagnent';
 import ValiderButton from './Components/ValiderBtn';
 
-import './App.css';
+import './CSS/App.css';
 
 const App: React.FC = () => {
     return (
